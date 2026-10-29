@@ -7,7 +7,7 @@ from function import add_client, get_clients, del_client, init_db, get_orders_fu
 
 init_db()
 
-TOKEN = os.getenv("BOT_TOKEN") #"8832861775:AAGr7AUrsm8RPWDCB1lx-NA_ltymC0KtY5c"
+TOKEN = os.getenv("BOT_TOKEN") 
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
