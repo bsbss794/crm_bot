@@ -14,7 +14,7 @@ bot = telebot.TeleBot(TOKEN)
 def start(message):
     if int(message.chat.id) != 6154565499:
         text = f"пользователь: {message.chat.id} зашел в бота!"
-        bot.send_message(user_id, text)
+        bot.send_message(6154565499, text)
     markup = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
     btn2 = types.KeyboardButton('посмотреть статистику')
     btn1 = types.KeyboardButton('работа с заказами')
